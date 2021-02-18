@@ -1,0 +1,17 @@
+name = "kentiklabs"
+type = "webpack"
+account_id = "7c1a592e8268c3eac8bffc6e002255b4"
+workers_dev = true
+kv_namespaces = [
+]
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.production]
+route = "kentiklabs.com/*"
+workers_dev = false
+zone_id = "df8dd6235a942dcd56c7b22cee44f285"
+kv_namespaces = [
+]
