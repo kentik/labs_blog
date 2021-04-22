@@ -1,5 +1,5 @@
 ---
-date: 2020-04-22
+date: 2021-04-21
 author: "Will Glozer"
 title: "Open-Sourcing Our Netdiag Crate"
 linkTitle: "netdiag"
