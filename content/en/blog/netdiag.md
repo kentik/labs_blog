@@ -63,9 +63,8 @@ let stream = pinger.ping(&ping).enumerate();
 
 Writing async code in Rust is quite pleasant in general, however it
 isn't uncommon to run into ergonomics issues around
-[pinning][rustdoc_pin]. `Pinger` is on the stack so it needs to be
-pinned via [futures::pin_mut][rustdoc_pin_mut] before awaiting the
-result of `stream.next()`
+[pinning][async_pinning]. `stream` must be pinned via
+[futures::pin_mut][rustdoc_pin_mut] prior to calling `stream.next()`.
 
 ```rust
 pin_mut!(stream);
@@ -149,9 +148,9 @@ hiring!][hiring]
 [tokio]: https://crates.io/crates/tokio
 [raw-socket]: https://crates.io/crates/raw-socket
 [example_ping]: https://github.com/kentik/netdiag/blob/master/examples/ping.rs
+[async_pinning]: https://rust-lang.github.io/async-book/04_pinning/01_chapter.html
 [rustdoc_stream]: https://docs.rs/futures/0.3.14/futures/stream/trait.Stream.html
 [rustdoc_enumerate]: https://docs.rs/futures/0.3.14/futures/stream/trait.StreamExt.html#method.enumerate
-[rustdoc_pin]: https://doc.rust-lang.org/std/pin/index.html
 [rustdoc_pin_mut]: https://docs.rs/futures/0.3.14/futures/macro.pin_mut.html
 [rustdoc_bind]: https://docs.rs/netdiag/0.1.0/netdiag/struct.Bind.html
 [rustdoc_knock]: https://docs.rs/netdiag/0.1.0/netdiag/knock/
