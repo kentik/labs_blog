@@ -10,21 +10,24 @@ theme = ["kentik-labs"]
 contentDir = "content/en"
 defaultContentLanguage = "en"
 
+# Highlighting config
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
 # Configure how URLs look like per section.
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
 
 [menu]
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-
-[[menu.main]]
-  name = "Come work with us"
-  url = "/work/"
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+  [[menu.main]]
+    name = "Blog"
+    url = "/"  # eventually change this
+  [[menu.main]]
+    name = "Come work with us"
+    url = "/work/"
 
