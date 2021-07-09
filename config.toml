@@ -17,10 +17,14 @@ blog = "/:section/:year/:month/:day/:slug/"
 [menu]
 
 [[menu.main]]
-  identifier = "about"
   name = "About"
   url = "/about/"
 
 [[menu.main]]
   name = "Blog"
   url = "/blog/"
+
+[[menu.main]]
+  name = "Come work with us"
+  url = "/work/"
+
