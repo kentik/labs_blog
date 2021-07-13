@@ -1,0 +1,177 @@
+@import "reset.css";
+
+:root {
+  --body: #222222;
+  --lightOrange: #f37021;
+  --darkOrange: #c95812;
+  --kentikOrange: #e0541f;
+  --muted: #5c707f;
+  --green: #41e093;
+  --yellow: #fce32e;
+  --magenta: #ba1e60;
+  --gridSize: 8;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --mono-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  border-top: 6px solid var(--kentikOrange);
+  color: var(--body);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  letter-spacing: -0.15px;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0px 12px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--body);
+  font-weight: 700;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 200px;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--green);
+}
+
+footer a {
+  color: var(--body);
+}
+
+/* articles on the listings screen have some margin */
+main.listing article {
+  margin-bottom: 32px;
+}
+
+article .highlight {
+  font-size: 14px;
+}
+
+article .highlight pre {
+  padding: 16px;
+  border-radius: 16px;
+}
+
+article .meta {
+  margin-bottom: 24px;
+}
+
+article.summary .meta {
+  margin-bottom: 16px;
+}
+
+article .author {
+  color: var(--muted);
+}
+
+article a {
+  color: var(--lightOrange);
+  text-decoration-color: var(--lightOrange);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.5px;
+}
+
+article a:hover {
+  color: var(--darkOrange);
+}
+
+article p {
+  margin-bottom: 24px;
+  line-height: 25px;
+}
+
+article h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.45px;
+}
+
+article h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+article h3 {
+  font-size: 20px;
+}
+
+article.summary h3 {
+  font-weight: 800;
+}
+
+article code {
+  font-family: var(--mono-font-family);
+  background-color: #f8f8f8;
+}
+
+article p code {
+  font-size: 85%;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #dadada;
+}
+
+article h3 a {
+  color: var(--body);
+  text-decoration-color: var(--lightOrange);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.5px;
+}
+
+article h3 a:hover {
+  color: var(--body);
+  text-decoration-color: var(--green);
+}
+
+article time {
+  color: var(--muted);
+}
