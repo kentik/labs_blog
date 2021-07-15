@@ -34,6 +34,10 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
+}
+
+/* max width container used to constrain content */
+.container {
   max-width: 900px;
   margin: 0px auto;
   padding: 24px;
@@ -80,7 +84,7 @@ nav li a:hover {
 
 footer {
   flex-shrink: 0;
-  background-color: var(--green);
+  background-color: var(--magenta);
 }
 
 footer a {

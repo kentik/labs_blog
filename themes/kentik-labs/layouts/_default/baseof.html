@@ -15,7 +15,9 @@
 <body>
     <div class="wrapper">
         {{ partial "header" . }} 
-        {{ block "main" . }}{{ end }} 
+        <div class="container">
+            {{ block "main" . }}{{ end }} 
+        </div>
     </div>
     {{ partial "footer" . }}
 </body>
