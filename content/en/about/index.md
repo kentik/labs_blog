@@ -4,8 +4,16 @@ author: "Kentik"
 title: "About Kentik Labs"
 ---
 
-Bacon ipsum dolor amet filet mignon tenderloin short ribs, jerky tri-tip capicola turkey meatloaf. Pancetta cupim shank flank pork loin meatloaf short loin turducken kielbasa tenderloin andouille tail boudin turkey. Swine prosciutto beef, pork chop fatback shank capicola pork belly drumstick jowl filet mignon burgdoggen short loin tail hamburger. Biltong beef shankle jerky, kevin burgdoggen rump filet mignon pastrami hamburger.
+Kentik Labs is a community hub developed by the team at Kentik.com.
 
-Andouille tongue ham picanha bresaola frankfurter meatball pork loin buffalo pastrami leberkas. Strip steak beef ribs ball tip, capicola pastrami prosciutto corned beef salami doner buffalo turducken cow. Tail ball tip pork loin, hamburger ribeye venison rump biltong ham. Kevin tri-tip picanha tail frankfurter. Burgdoggen porchetta sausage biltong corned beef. Tail kielbasa boudin hamburger sirloin, t-bone fatback strip steak venison short ribs filet mignon turkey biltong.
+At our core, we are the data-dreaming network nerds who built an observability platform that makes much of the internet go.
 
-Shoulder t-bone pork cupim, turducken tail meatball chislic ham hock. Pig swine filet mignon kevin, bresaola flank andouille sausage salami. Rump chislic ham hock boudin pork loin, doner beef ribs porchetta pancetta. Tenderloin kielbasa porchetta chuck, pastrami pork loin meatball salami cow prosciutto burgdoggen. Meatloaf andouille spare ribs pig tongue corned beef picanha.
+But what fun is the internet without the awesome applications and services that developers build? And what fun is any of that if there’s a problem somewhere along the way?
+
+Many developers and SREs turn to full-stack observability to find and fix problems before performance and user experiences suffer. But what if it’s a network problem?
+
+We believe true full-stack observability doesn’t exist without network observability. That’s why we open source our tools. Let’s work together, diagnose any issue across any infrastructure (the network included!), and keep the internet fun.
+
+Got a question? Reach out.
+
+Want to join us? We’re hiring.

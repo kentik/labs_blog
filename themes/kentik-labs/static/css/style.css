@@ -5,7 +5,9 @@
   --lightOrange: #f37021;
   --darkOrange: #c95812;
   --kentikOrange: #e0541f;
+  --gray: #f0f0f0;
   --muted: #5c707f;
+  --blue: #0095c3;
   --green: #41e093;
   --yellow: #fce32e;
   --magenta: #ba1e60;
@@ -24,7 +26,6 @@ body {
 
 body {
   background-color: #ffffff;
-  border-top: 6px solid var(--kentikOrange);
   color: var(--body);
   display: flex;
   flex-direction: column;
@@ -43,12 +44,38 @@ body {
   padding: 24px;
 }
 
+section {
+  padding: 40px;
+}
+
+section.bg-green {
+  background-color: var(--green);
+}
+
+section.bg-gray {
+  background-color: var(--gray);
+}
+
+section.home h1 {
+  font-size: 32px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
   margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+header .container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
 }
 
 nav {
@@ -85,10 +112,11 @@ nav li a:hover {
 footer {
   flex-shrink: 0;
   background-color: var(--magenta);
+  color: #ffffff;
 }
 
 footer a {
-  color: var(--body);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* articles on the listings screen have some margin */
@@ -178,4 +206,103 @@ article h3 a:hover {
 
 article time {
   color: var(--muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 16px;
+  grid-row-gap: 8px;
+}
+
+.grid.grid-cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+.project-card .project-description {
+  flex: 1;
+}
+
+.project-card h3 {
+  color: var(--blue);
+}
+
+.project-card a {
+  color: var(--kentikOrange);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-icon {
+  margin: 0px auto;
+  width: 75px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* generalized font-weight stuff */
+.font-weight-light {
+  font-weight: 300;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+/* generalized color classes */
+.color-lightOrange {
+  color: var(--lightOrange);
+}
+.color-darkOrange {
+  color: var(--darkOrange);
+}
+.color-kentikOrange {
+  color: var(--kentikOrange);
+}
+.color-muted {
+  color: var(--muted);
+}
+.color-green {
+  color: var(--green);
+}
+.color-yellow {
+  color: var(--yellow);
+}
+.color-magenta {
+  color: var(--magenta);
 }

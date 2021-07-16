@@ -22,12 +22,12 @@ blog = "/:section/:year/:month/:day/:slug/"
 
 [menu]
   [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+  [[menu.main]]
     name = "About"
     url = "/about/"
   [[menu.main]]
     name = "Blog"
-    url = "/"  # eventually change this
-  [[menu.main]]
-    name = "Come work with us"
-    url = "/work/"
+    url = "/blog"
 
