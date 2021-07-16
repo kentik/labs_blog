@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main class="listing">
+  <div class="container">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in"
+    .Site.Params.mainSections) }} {{ range $paginator.Pages }} {{ .Render
+    "summary" }} {{ end }}
+  </div>
+</main>
+{{ end }}

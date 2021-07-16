@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  <div class="container">
+    <h1 class="font-weight-light mb-2 text-center">Projects</h1>
+    <div class="grid grid-cards">
+      {{ range where .Site.Pages "Section" "projects" }}
+      <div class="card project-card">
+        <h3>{{ .Title }}</h3>
+        <div class="project-description color-muted">{{ .Content }}</div>
+        <a href="{{ .Permalink }}">View project</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}

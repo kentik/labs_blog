@@ -1,0 +1,20 @@
+<header>
+  <div class="container">
+    <a href="{{ .Site.BaseURL }}">
+      <img
+        class="logo"
+        src="/images/kentik-labs-logo.svg"
+        alt="{{ .Site.Title }}"
+      />
+    </a>
+    {{ with .Site.Menus.main }}
+    <nav>
+      <ul>
+        {{ range . }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  </div>
+</header>
