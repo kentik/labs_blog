@@ -8,7 +8,7 @@
   --gray: #f0f0f0;
   --muted: #5c707f;
   --blue: #0095c3;
-  --green: #41e093;
+  --green: #D0F7CA;
   --yellow: #fce32e;
   --magenta: #ba1e60;
   --gridSize: 8;
@@ -340,4 +340,7 @@ article time {
 }
 .color-magenta {
   color: var(--magenta);
+}
+.color-blue {
+  color: var(--blue);
 }

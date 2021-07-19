@@ -55,14 +55,16 @@
     </div>
   </div>
 </section>
-<section class="home bg-gray">
+<section class="home projects bg-gray">
   <div class="container">
     <h1 class="font-weight-light mb-4 text-center">Projects</h1>
-    <div class="grid grid-cards">
-      {{ range where .Site.RegularPages "Section" "projects" }}
-        {{ .Render "li" }}
-      {{ end }}
+    <div class="grid grid-cards mb-4">
+      {{ range where .Site.RegularPages "Section" "projects" }} {{ .Render "li"
+      }} {{ end }}
     </div>
+    <p class="text-center">
+      <a href="/projects" class="color-blue">See all Projects</a>
+    </p>
   </div>
 </section>
 {{ end }}
