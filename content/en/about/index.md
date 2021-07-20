@@ -14,6 +14,6 @@ Many developers and SREs turn to full-stack observability to find and fix proble
 
 We believe true full-stack observability doesn’t exist without network observability. That’s why we open source our tools. Let’s work together, diagnose any issue across any infrastructure (the network included!), and keep the internet fun.
 
-Got a question? Reach out.
+Got a question? [Reach out](mailto:labs@kentik.com).
 
 Want to join us? [We’re hiring](https://www.kentik.com/careers/#postings).
