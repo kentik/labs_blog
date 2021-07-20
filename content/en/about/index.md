@@ -4,7 +4,7 @@ author: "Kentik"
 title: "About Kentik Labs"
 ---
 
-Kentik Labs is a community hub developed by the team at Kentik.com.
+Kentik Labs is a community hub developed by the team at [Kentik.com](http://www.kentik.com).
 
 At our core, we are the data-dreaming network nerds who built an observability platform that makes much of the internet go.
 
@@ -16,4 +16,4 @@ We believe true full-stack observability doesn’t exist without network observa
 
 Got a question? Reach out.
 
-Want to join us? We’re hiring.
+Want to join us? [We’re hiring](https://www.kentik.com/careers/#postings).
