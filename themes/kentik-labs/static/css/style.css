@@ -5,17 +5,19 @@
   --lightOrange: #f37021;
   --darkOrange: #c95812;
   --kentikOrange: #e0541f;
-  --gray: #f0f0f0;
+  --gray: #f8f8f8;
   --muted: #5c707f;
   --blue: #0095c3;
-  --green: #D0F7CA;
+  --green: #d0f7ca;
   --yellow: #fce32e;
   --magenta: #ba1e60;
   --gridSize: 8;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  --serif-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --serif-font-family: Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --mono-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
     Courier, monospace;
 }
@@ -36,6 +38,7 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
+  padding-bottom: 60px;
 }
 
 /* max width container used to constrain content */
@@ -62,8 +65,11 @@ section.home h1 {
 }
 
 section.hero h1 {
-  font-size: 40px;
-  padding-top: 40px;
+  font-size: 46px;
+  padding-top: 0px;
+  line-height: 49px;
+  position: relative;
+  left: 50px;
 }
 
 header {
@@ -286,6 +292,7 @@ article time {
 .network-observability-definition .n {
   font-style: italic;
   font-weight: 300;
+  color: var(--muted);
 }
 
 .github-button:hover {
