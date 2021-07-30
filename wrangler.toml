@@ -10,7 +10,7 @@ bucket = "./public"
 entry-point = "workers-site"
 
 [env.production]
-route = "kentiklabs.com/*"
+routes = ["kentiklabs.com/*", "www.kentiklabs.com/*"]
 workers_dev = false
 zone_id = "df8dd6235a942dcd56c7b22cee44f285"
 kv_namespaces = [
