@@ -190,21 +190,17 @@ article p {
 
 article h1 {
   font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.45px;
+  font-weight: 500;
 }
 
 article h2 {
   font-size: 22px;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 article h3 {
   font-size: 20px;
-}
-
-article.summary h3 {
-  font-weight: 800;
 }
 
 article code {
@@ -220,10 +216,8 @@ article p code {
 }
 
 article h3 a {
-  color: var(--body);
-  text-decoration-color: var(--lightOrange);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.5px;
+  color: var(--blue);
+  text-decoration: none;
 }
 
 article h3 a:hover {
