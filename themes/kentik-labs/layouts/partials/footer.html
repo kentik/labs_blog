@@ -1,5 +1,19 @@
 <footer>
-	<div class="container">
-		<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
-	</div>
+  <div class="container">
+    {{ with .Site.Menus.main }}
+    <ul class="footer-links">
+      {{ range . }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    <div class="text-center">
+      <p>Copyright &copy; {{ now.Year }} Kentik Labs. All rights reserved.</p>
+      <p>
+        Open-source network observability projects from the team at
+        <a href="https://www.kentik.com">Kentik</a>.
+      </p>
+    </div>
+  </div>
 </footer>
