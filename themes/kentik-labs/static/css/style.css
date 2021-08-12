@@ -7,19 +7,26 @@
   --kentikOrange: #e0541f;
   --gray: #f8f8f8;
   --muted: #5c707f;
+  --white: #ffffff;
   --blue: #0095c3;
   --green: #d0f7ca;
   --yellow: #fce32e;
   --magenta: #ba1e60;
   --gridSize: 8;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontWeightBold: 700;
+
+  --font-family: "Mukta", sans-serif;
+  /* --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+    "Segoe UI Symbol"; */
   --serif-font-family: Iowan Old Style, Apple Garamond, Baskerville,
     Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --mono-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
-    Courier, monospace;
+  --mono-font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
 }
 
 html,
@@ -38,7 +45,6 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
-  padding-bottom: 60px;
 }
 
 /* max width container used to constrain content */
@@ -65,7 +71,7 @@ section.home h1 {
 }
 
 section.hero h1 {
-  font-size: 46px;
+  font-size: 39px;
   padding-top: 0px;
   line-height: 49px;
   position: relative;
@@ -110,7 +116,8 @@ nav li {
 nav li a {
   text-decoration: none;
   color: var(--body);
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
+  font-size: 18px;
 }
 
 nav li a:after {
@@ -139,6 +146,16 @@ footer {
 
 footer a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.copyright {
+  margin-top: 42px;
 }
 
 /* articles on the listings screen have some margin */
@@ -185,21 +202,17 @@ article p {
 
 article h1 {
   font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.45px;
+  font-weight: var(--fontWeightRegular);
 }
 
 article h2 {
   font-size: 22px;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 article h3 {
   font-size: 20px;
-}
-
-article.summary h3 {
-  font-weight: 800;
 }
 
 article code {
@@ -215,10 +228,8 @@ article p code {
 }
 
 article h3 a {
-  color: var(--body);
-  text-decoration-color: var(--lightOrange);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.5px;
+  color: var(--blue);
+  text-decoration: none;
 }
 
 article h3 a:hover {
@@ -246,6 +257,11 @@ article time {
   grid-gap: 24px;
 }
 
+.grid.grid-footer {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
+}
+
 .card {
   background: #ffffff;
   padding: 24px;
@@ -263,15 +279,21 @@ article time {
   flex: 1;
 }
 
-.project-card h3 {
+.project-card h3 a {
   color: var(--blue);
+  text-decoration: none;
+}
+
+.project-card h3 a:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 .github-button {
   background: #ffffff;
   border: 1px solid var(--kentikOrange);
   color: var(--kentikOrange);
-  font-weight: 500;
+  font-weight: var(--fontWeightRegular);
   text-decoration: none;
   font-size: 14px;
   display: flex;
@@ -280,18 +302,54 @@ article time {
   padding: 3px 8px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 280px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover {
+  background: var(--lightOrange);
+}
+
+.social-link svg:hover {
+  fill: var(--white);
+}
+
 .network-observability-definition {
   font-size: 20px;
   font-family: var(--serif-font-family);
 }
 
 .network-observability-definition .bolder {
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
 }
 
 .network-observability-definition .n {
   font-style: italic;
-  font-weight: 300;
+  font-weight: var(--fontWeightLight);
   color: var(--muted);
 }
 
@@ -312,7 +370,7 @@ article time {
 }
 
 .card h3 {
-  font-weight: 500;
+  font-weight: var(--fontWeightRegular);
   margin-bottom: 8px;
 }
 
@@ -322,7 +380,7 @@ article time {
 
 /* generalized font-weight stuff */
 .font-weight-light {
-  font-weight: 300;
+  font-weight: var(--fontWeightLight);
 }
 
 .mb-1 {

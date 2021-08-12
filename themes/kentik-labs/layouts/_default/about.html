@@ -1,0 +1,13 @@
+{{ define "meta" }}
+  <meta name="title" content="{{ .Title }}">
+  <meta name="description" content="{{ .Description }}">
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <div class="container">
+    <h1 class="font-weight-light mb-2 text-center color-kentikOrange">About</h1>
+    <article>{{ .Content }}</article>
+  </div>
+</main>
+{{ end }}
