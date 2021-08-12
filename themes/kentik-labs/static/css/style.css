@@ -40,7 +40,6 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
-  padding-bottom: 60px;
 }
 
 /* max width container used to constrain content */
@@ -67,7 +66,7 @@ section.home h1 {
 }
 
 section.hero h1 {
-  font-size: 46px;
+  font-size: 39px;
   padding-top: 0px;
   line-height: 49px;
   position: relative;
@@ -269,8 +268,14 @@ article time {
   flex: 1;
 }
 
-.project-card h3 {
+.project-card h3 a {
   color: var(--blue);
+  text-decoration: none;
+}
+
+.project-card h3 a:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 .github-button {
