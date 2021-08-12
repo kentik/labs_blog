@@ -117,6 +117,7 @@ nav li a {
   text-decoration: none;
   color: var(--body);
   font-weight: var(--fontWeightBold);
+  font-size: 18px;
 }
 
 nav li a:after {
@@ -258,6 +259,7 @@ article time {
 
 .grid.grid-footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
 }
 
 .card {
