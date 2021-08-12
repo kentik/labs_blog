@@ -1,14 +1,21 @@
 <footer>
   <div class="container">
-    {{ with .Site.Menus.main }}
-    <ul class="footer-links">
-      {{ range . }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    {{ end }}
+    <div class="grid grid-footer">
+      {{ with .Site.Menus.main }}
+      <ul class="footer-links">
+        {{ range . }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
 
-    <div class="text-center">
+      <ul class="footer-links">
+        <li><a href="https://kentik.com/careers">Careers</a></li>
+      </ul>
+
+      {{ end }} {{ partial "social" . }}
+    </div>
+
+    <div class="copyright text-center">
       <p>Copyright &copy; {{ now.Year }} Kentik Labs. All rights reserved.</p>
       <p>
         Open-source network observability projects from the team at
