@@ -1,5 +1,6 @@
 baseURL = "/"
 title = "Kentik Labs | Open-source Network Observability Projects"
+description = "Kentik Labs is a community hub developed by the team at Kentik.com. At our core, we are the data-dreaming network nerds who built an observability platform that makes much of the internet go."
 
 enableRobotsTXT = true
 
