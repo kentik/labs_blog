@@ -35,7 +35,7 @@ body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--gray);
   color: var(--body);
   display: flex;
   flex-direction: column;
@@ -71,11 +71,13 @@ section.home h1 {
 }
 
 section.hero h1 {
-  font-size: 39px;
+  font-size: 50px;
   padding-top: 0px;
-  line-height: 49px;
+  line-height: 54px;
   position: relative;
-  left: 50px;
+  left: 20px;
+  width: 460px;
+  top: 0;
 }
 
 header {
@@ -142,6 +144,7 @@ footer {
   background-color: var(--magenta);
   color: #ffffff;
   padding: 50px 0;
+  margin-top: 42px;
 }
 
 footer a {
