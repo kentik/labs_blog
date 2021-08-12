@@ -1,4 +1,8 @@
 {{ define "main" }}
+<meta
+  name="description"
+  content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Something hardcoded{{ end }}"
+/>
 <main>
   <div class="container">
     <article>

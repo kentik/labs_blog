@@ -1,7 +1,7 @@
 ---
 date: 2021-07-09
 author: "Kentik"
-title: "About Kentik Labs"
+title: "Kentik Labs | About Our Network Observability Projects"
 ---
 
 Kentik Labs is a community hub developed by the team at [Kentik.com](http://www.kentik.com).
