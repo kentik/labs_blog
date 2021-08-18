@@ -2,7 +2,8 @@
 date: 2021-04-21
 author: "Will Glozer"
 title: "Open-Sourcing Our Netdiag Crate"
-linkTitle: "netdiag"
+slug: "open-sourcing-our-netdiag-crate"
+summary: "Kentik Labs is happy to announce the release of our first open-source Rust crate, netdiag, which provides scalable, asynchronous, implementations of a number of low-level network diagnostics including ping, trace, and a custom diagnostic we call knock."
 ---
 
 Kentik Labs is happy to announce the release of our first open-source

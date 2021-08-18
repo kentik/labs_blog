@@ -1,0 +1,10 @@
+<article class="summary">
+	<div class="meta">
+		<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+		<span class="author">{{ $.Param "author" }} - </span>
+		<time>{{ .Date.Format "Jan 2, 2006" }}</time>
+	</div>
+  <div>
+    {{ .Summary }}
+  </div>
+</article>

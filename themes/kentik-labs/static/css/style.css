@@ -174,12 +174,14 @@ main.listing article {
 }
 
 article .highlight {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 article .highlight pre {
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 4px;
+  background: white !important;
+  border: 1px solid #f370214a;
 }
 
 article .meta {
@@ -227,7 +229,6 @@ article h3 {
 
 article code {
   font-family: var(--mono-font-family);
-  background-color: #f8f8f8;
 }
 
 article p code {
