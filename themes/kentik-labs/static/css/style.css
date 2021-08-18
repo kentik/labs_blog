@@ -70,6 +70,10 @@ section.home h1 {
   font-size: 32px;
 }
 
+section.hero {
+  background: var(--white);
+}
+
 section.hero h1 {
   font-size: 50px;
   padding-top: 0px;
@@ -81,12 +85,11 @@ section.hero h1 {
 }
 
 header {
+  background: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  height: 80px;
 }
 
 header .container {
@@ -159,6 +162,10 @@ footer .footer-links {
 
 .copyright {
   margin-top: 42px;
+}
+
+main {
+  padding-top: 32px;
 }
 
 /* articles on the listings screen have some margin */
