@@ -291,7 +291,6 @@ article time {
   display: flex;
   flex-direction: column;
   min-height: 250px;
-  max-width: 270px;
 }
 
 .project-card .project-description {
