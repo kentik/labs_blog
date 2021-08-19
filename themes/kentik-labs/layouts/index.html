@@ -74,10 +74,18 @@
   <div class="container">
     <h1 class="font-weight-light mb-4 text-center">Projects</h1>
     <div class="grid grid-cards mb-4">
-      {{ range first 5 (where site.RegularPages "Section" "projects")  }}
+      {{ range first 3 (where site.RegularPages "Section" "projects")  }}
         {{ .Render "li" }} 
       {{ end }}
     </div>
+
+    <div class="grid grid-cards-alt mb-4">
+      {{ range first 2 (after 3 (where site.RegularPages "Section" "projects")) }}
+        {{ .Render "li" }} 
+      {{ end }}
+    </div>
+
+
     <p class="text-center">
       <a href="/projects" class="color-blue">See All Projects</a>
     </p>

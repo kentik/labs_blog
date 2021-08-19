@@ -268,6 +268,13 @@ article time {
   grid-gap: 24px;
 }
 
+.grid.grid-cards-alt {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 24px;
+  width: 65%;
+  margin: 0px auto 42px auto;
+}
+
 .grid.grid-footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: flex-start;
@@ -284,6 +291,7 @@ article time {
   display: flex;
   flex-direction: column;
   min-height: 250px;
+  max-width: 270px;
 }
 
 .project-card .project-description {
@@ -434,4 +442,14 @@ article time {
 }
 .color-blue {
   color: var(--blue);
+}
+
+@media screen and (max-width: 800px) {
+  .grid.grid-cards-alt {
+    width: 100%;
+  }
+
+  section {
+    padding: 24px;
+  }
 }
