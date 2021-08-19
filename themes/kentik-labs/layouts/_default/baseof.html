@@ -19,6 +19,15 @@
 
     <link rel="icon" href="{{"images/favicon.png" | relURL }}" sizes="any">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPL6GT6CRH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BPL6GT6CRH');
+    </script>
+
     {{/*  overrides the title from a layout if we want  */}}
     {{ block "title" . }}{{ end }} 
 
