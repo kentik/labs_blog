@@ -6,13 +6,27 @@
         Open Source <br />
         Network Observability
       </h1>
-      <img src="/images/kentik-labs-hero.svg" width="550" alt="Open Source Network Observability"/>
+      <img
+        src="/images/kentik-labs-hero.svg"
+        width="550"
+        alt="Open Source Network Observability"
+      />
     </div>
   </div>
 </section>
 
 <section class="home bg-gray network-observability-definition text-center">
-  <span class="bolder">net<span class="color-kentikOrange">•</span>work ob<span class="color-kentikOrange">•</span>servʹa<span class="color-kentikOrange">•</span>bilʹi<span class="color-kentikOrange">•</span>ty</span> <span class="n">(n)</span> 1. The ability to answer any question about your network.
+  <span class="bolder"
+    >net<span class="color-kentikOrange">•</span>work ob<span
+      class="color-kentikOrange"
+      >•</span
+    >servʹa<span class="color-kentikOrange">•</span>bilʹi<span
+      class="color-kentikOrange"
+      >•</span
+    >ty</span
+  >
+  <span class="n">(n)</span> 1. The ability to answer any question about your
+  network.
 </section>
 <section class="home bg-green">
   <div class="container">
@@ -60,9 +74,18 @@
   <div class="container">
     <h1 class="font-weight-light mb-4 text-center">Projects</h1>
     <div class="grid grid-cards mb-4">
-      {{ range where .Site.RegularPages "Section" "projects" }} {{ .Render "li"
-      }} {{ end }}
+      {{ range first 3 (where site.RegularPages "Section" "projects")  }}
+        {{ .Render "li" }} 
+      {{ end }}
     </div>
+
+    <div class="grid grid-cards-alt mb-4">
+      {{ range first 2 (after 3 (where site.RegularPages "Section" "projects")) }}
+        {{ .Render "li" }} 
+      {{ end }}
+    </div>
+
+
     <p class="text-center">
       <a href="/projects" class="color-blue">See All Projects</a>
     </p>
