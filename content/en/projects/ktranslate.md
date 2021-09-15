@@ -1,5 +1,5 @@
 ---
-title: kTranslate
+title: ktranslate
 github_link: https://github.com/kentik/ktranslate
 weight: 1
 ---
