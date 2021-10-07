@@ -443,7 +443,25 @@ article time {
   color: var(--blue);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  section.hero h1 {
+    font-size: 34px;
+    line-height: 38px;
+    text-align: center;
+    left: 0;
+    width: auto;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  header .logo {
+    width: 130px;
+    margin-bottom: 8px;
+  }
+
   .grid.grid-cards-alt {
     width: 100%;
   }
