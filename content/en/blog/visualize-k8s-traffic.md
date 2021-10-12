@@ -196,3 +196,4 @@ to help build the future of open source network observability!
 [prometheus]: https://prometheus.io/
 [grafana]: https://grafana.com/grafana/
 [discord]: https://discord.gg/kentik
+[github]: https://github.com/kentik
