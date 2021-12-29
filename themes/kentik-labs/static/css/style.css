@@ -40,7 +40,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
-  letter-spacing: -0.15px;
 }
 
 .wrapper {
@@ -182,6 +181,9 @@ article .highlight pre {
   border-radius: 4px;
   background: white !important;
   border: 1px solid #f370214a;
+
+  /* code blocks scroll horizontally and don't wrap */
+  overflow-y: auto;
 }
 
 article .meta {
