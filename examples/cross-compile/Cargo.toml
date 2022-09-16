@@ -1,0 +1,12 @@
+[package]
+name    = "cross-compile"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.65"
+libc   = "0.2.132"
+
+[build-dependencies]
+anyhow = "1.0.65"
+cc     = "1.0.73"
