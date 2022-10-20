@@ -1,5 +1,5 @@
 ---
-date: 2022-08-17
+date: 2024-08-17
 author: "Ian Pye and Will Glozer"
 title: "The Songs of the Internet"
 slug: "latency-as-music"
