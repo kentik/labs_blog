@@ -8,7 +8,7 @@
 
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Kentik Labs | Open-source Network Observability Projects" />
+    <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:description" content="Kentik Labs is a community hub developed by the team at Kentik.com. At our core, we are the data-dreaming network nerds who built an observability platform that makes much of the internet go." />
     <meta property="og:image" content="{{"images/kentik-labs-og.png" | relURL }}" />
 
@@ -28,28 +28,28 @@
     </script>
 
     {{/*  overrides the title from a layout if we want  */}}
-    {{ block "title" . }}{{ end }} 
+    {{ block "title" . }}{{ end }}
 
     <title>{{ .Title }}</title>
 
     {{ with .Site.Params.description }}
         <meta name="description" content="{{ . }}">
-    {{ end }} 
-    
+    {{ end }}
+
     {{ with .Site.Params.author }}
         <meta name="author" content="{{ . }}">
     {{ end }}
 
-    {{ block "meta" . }}{{ end }} 
+    {{ block "meta" . }}{{ end }}
 
 
-    <link rel="stylesheet" href="{{"css/style.css" | relURL }}"> 
+    <link rel="stylesheet" href="{{"css/style.css" | relURL }}">
 </head>
 
 <body>
     <div class="wrapper">
-        {{ partial "header" . }} 
-        {{ block "main" . }}{{ end }} 
+        {{ partial "header" . }}
+        {{ block "main" . }}{{ end }}
     </div>
     {{ partial "footer" . }}
 </body>
